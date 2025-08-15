@@ -12,16 +12,10 @@ function Navbar() {
                         <Link to="/">Home</Link>
                     </li>
                     <li className="item">
-                        <Link to="/appointment">Consultas</Link>
+                        <Link to="/loja">Loja</Link>
                     </li>
                     <li className="item">
-                        <Link to="/contact">Contato</Link>
-                    </li>
-                    <li className="item">
-                        <Link to="/company">Empresa</Link>
-                    </li>
-                    <li className="item">
-                        <Link to="/newappointment">Nova Consulta</Link>
+                        <Link to="/clientes">Cadastros</Link>
                     </li>
                 </ul>
         </nav>

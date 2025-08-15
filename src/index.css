@@ -8,10 +8,19 @@
 
 }
 
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 100%;
+  max-width: 100%;
   min-height: 100vh;
 }
