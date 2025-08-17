@@ -6,7 +6,7 @@ function Home(){
         <section className="home_container">
             <h1>Bem-vindo a <span>Book Store</span></h1>
             <p>Compre seu livro agora mesmo!</p>
-            <LinkButton to="/newproject" text="Faça a s ua Compra"/>
+            <LinkButton to="/newproject" text="Faça a sua Compra"/>
             <img src="/images/bookstore logo.png" alt='Clinica'/>
         </section>
     )

@@ -10,7 +10,10 @@ function Customer() {
         <h1>Clientes</h1>
         <LinkButton to="/newcustomers" text="Cadastrar Cliente" />
       </div>
-      <CustomerCard />
+      <div className='list-card'>
+        <CustomerCard />
+        <CustomerCard />
+      </div>
     </div>
   );
 }

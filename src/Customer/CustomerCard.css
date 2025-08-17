@@ -7,7 +7,7 @@
 }
 
 .customer_card h4 {
-    background-color: #31a9c4;
+    background-color: #594a47;
     color: white;
     padding: 0.4em;
     margin-bottom: 1.3em;
@@ -66,6 +66,6 @@
 
 .customer_card_actions a:hover, 
 .customer_card_actions button:hover {
-    background-color: #054553;
+    background-color: #9e847f;
     color: white;
 }
