@@ -4,14 +4,38 @@ import { useState } from 'react';
 import ConfirmModal from '../components/ConfirmModal';
 import './CustomerCard.css';
 
-function CustomerCard() {
+interface CustomerCardProps {
+  customer: {
+    id: number;
+    name: string;
+    phone: string;
+    createdAt: string;
+  };
+  onDelete: (id: number) => void; // callback para atualizar a lista após exclusão
+}
+
+function CustomerCard({ customer, onDelete }: CustomerCardProps) {
   const [showModal, setShowModal] = useState(false);
 
   const handleDelete = () => setShowModal(true);
 
-  const confirmDelete = () => {
-    setShowModal(false);
-    console.log("Cliente excluído!"); // aqui vai a lógica real
+  const confirmDelete = async () => {
+    try {
+      const response = await fetch(`http://localhost:8080/api/clientes/${customer.id}`, {
+        method: 'DELETE',
+      });
+
+      if (response.ok) {
+        onDelete(customer.id); 
+      } else {
+        alert("Erro ao excluir cliente");
+      }
+    } catch (error) {
+      console.error("Erro ao excluir cliente:", error);
+      alert("Falha de conexão com servidor");
+    } finally {
+      setShowModal(false);
+    }
   };
 
   const cancelDelete = () => setShowModal(false);
@@ -19,12 +43,12 @@ function CustomerCard() {
   return (
     <div className="customer_card">
       <h4>Cliente</h4>
-      <p><span>Nome:</span></p>
-      <p><span>Telefone:</span></p>
-      <p><span>Criado em:</span></p>
+      <p><span>Nome:</span> {customer.name}</p>
+      <p><span>Telefone:</span> {customer.phone}</p>
+      <p><span>Criado em:</span> {new Date(customer.createdAt).toLocaleDateString()}</p>
 
       <div className="customer_card_actions">
-        <Link to={`/editcustomers`}>
+        <Link to={`/customers/${customer.id}/edit`}>
           <BsPencil /> Editar
         </Link>
         <button onClick={handleDelete}>
