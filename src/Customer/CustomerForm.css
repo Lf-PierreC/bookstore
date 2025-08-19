@@ -1,21 +1,30 @@
 .form {
-    width: 100%;
-    margin: 2em 0;
+  width: 100%;
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 1.5em; 
 }
 
 .form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: .5em;
-    color: #000;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #000;
 }
 
 .form input {
-    width: 100%;
-    padding: .5em;
-    margin-bottom: 1.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: white;
-    color: #000;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  color: #000;
 }
+
+.form h3 {
+  grid-column: span 2;
+  margin-bottom: 1em;
+  color: #000;
+}
+
