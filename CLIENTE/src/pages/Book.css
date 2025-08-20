@@ -1,0 +1,19 @@
+.books_container {
+    padding: 2em;
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    color: black;
+    text-align: center;
+    padding: 2em;
+}
+
+.list-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
