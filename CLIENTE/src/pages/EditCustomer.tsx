@@ -8,7 +8,7 @@ function EditCustomer() {
   const [customer, setCustomer] = useState<any>(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/clientes/${id}`)
+    fetch(`http://localhost:8080/clientes/${id}`)
       .then(res => res.json())
       .then(data => setCustomer(data))
       .catch(err => console.error('Erro ao carregar cliente:', err));

@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
+    color: black;
+    text-align: center;
+    padding: 2em;
 }
 
 .list-card {
@@ -13,3 +16,5 @@
     flex-wrap: wrap;
     gap: 1em;
 }
+
+

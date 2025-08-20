@@ -21,7 +21,7 @@ function CustomerCard({ customer, onDelete }: CustomerCardProps) {
 
   const confirmDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/api/clientes/${customer.id}`, {
+      const response = await fetch(`http://localhost:8080/clientes/${customer.id}`, {
         method: 'DELETE',
       });
 

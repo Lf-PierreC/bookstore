@@ -7,6 +7,7 @@ import './CustomerForm.css';
 interface CustomerFormProps {
   btnText: string;
   customerData?: {
+    id?: number; // Adicionado para edição
     name: string;
     gender: string;
     birthdate: string;
@@ -61,18 +62,24 @@ function CustomerForm({ btnText, customerData }: CustomerFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const isEdit = !!customerData; // Se customerData existe, é edição
+    const url = isEdit
+      ? `http://localhost:8080/clientes/${(customerData as any).id}`
+      : 'http://localhost:8080/clientes';
+    const method = isEdit ? 'PUT' : 'POST';
+
     try {
-      const response = await fetch('http://localhost:8080/api/clientes', {
-        method: 'POST',
+      const response = await fetch(url, {
+        method,
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(customer),
       });
 
       if (response.ok) {
-        alert('Cliente cadastrado com sucesso!');
-        navigate('/customers'); 
+        alert(isEdit ? 'Cliente atualizado com sucesso!' : 'Cliente cadastrado com sucesso!');
+        navigate('/customers');
       } else {
-        alert('Erro ao cadastrar cliente');
+        alert(isEdit ? 'Erro ao atualizar cliente' : 'Erro ao cadastrar cliente');
       }
     } catch (error) {
       console.error('Erro:', error);
