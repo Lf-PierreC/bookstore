@@ -1,0 +1,41 @@
+
+.form {
+  width: 100%;
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em 1.2em; 
+}
+
+
+.form h3 {
+  grid-column: span 2;
+  margin: 0.5em 0 0.2em;
+  color: #322b2a;
+}
+
+
+.form_control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.45em;
+  color: #000;
+}
+
+.form_control input,
+.form_control select,
+.form_control textarea {
+  width: 100%;
+  padding: 0.55em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+}
+
+
+.form button {
+  grid-column: span 2;
+  justify-self: center;
+  padding: 0.8em 2em;
+}

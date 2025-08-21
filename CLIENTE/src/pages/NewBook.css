@@ -1,0 +1,14 @@
+.newbook_container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.newbook_container h1 {
+    margin-bottom: .5em;
+    color: #000;
+}
+
+.newbook_container p {
+    color: #000;
+}

@@ -63,5 +63,39 @@
       "notes": "casa",
       "id": "63c8"
     }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "Introdução à Programação",
+      "author": "José da Silva",
+      "category": "Tecnologia",
+      "price": 120,
+      "profitMargin": 30,
+      "reason": "",
+      "imageUrl": "livro1.png",
+      "createdAt": "2025-08-01"
+    },
+    {
+      "id": "2",
+      "title": "Banco de Dados Essencial",
+      "author": "Maria Souza",
+      "category": "Tecnologia",
+      "price": 150.5,
+      "profitMargin": 25,
+      "reason": "",
+      "imageUrl": "livro3.png",
+      "createdAt": "2025-08-05"
+    },
+    {
+      "id": "0d28",
+      "title": "teste72",
+      "author": "eu",
+      "category": "comedia",
+      "price": 111,
+      "profitMargin": 12,
+      "reason": "teste",
+      "imageUrl": "livro2.png"
+    }
   ]
 }

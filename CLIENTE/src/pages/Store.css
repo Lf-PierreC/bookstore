@@ -1,0 +1,13 @@
+.store_container {
+  padding: 2em;
+}
+
+.store_container {
+  color: black;
+}
+
+.store_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}

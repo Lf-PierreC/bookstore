@@ -7,7 +7,7 @@ import './CustomerForm.css';
 interface CustomerFormProps {
   btnText: string;
   customerData?: {
-    id?: number; // Adicionado para edição
+    id?: number; 
     name: string;
     gender: string;
     birthdate: string;
@@ -62,7 +62,7 @@ function CustomerForm({ btnText, customerData }: CustomerFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const isEdit = !!customerData; // Se customerData existe, é edição
+    const isEdit = !!customerData; 
     const url = isEdit
       ? `http://localhost:8080/clientes/${(customerData as any).id}`
       : 'http://localhost:8080/clientes';

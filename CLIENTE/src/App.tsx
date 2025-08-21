@@ -9,6 +9,8 @@ import EditCustomer from './pages/EditCustomer';
 import Books from './pages/Book';
 import NewBook from './pages/NewBook';
 import EditBook from './pages/EditBook';
+import Store from './pages/Store';
+import BookDetails from './pages/BookDetails';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/books" element={<Books />} />
         <Route path="/books/new" element={<NewBook />} />
         <Route path="/books/:id/edit" element={<EditBook />} />
+        <Route path="/books/:id" element={<BookDetails />} />
+        <Route path="/store" element={<Store/>} />
       </Routes>
     </>
   );
