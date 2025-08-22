@@ -22,12 +22,16 @@ function Navbar() {
                     <li className="item">
                         <Link to="/customers">Cadastros</Link>
                     </li>
+                    <li className="item">
+                        <Link to="/stocks">Estoque</Link>
+                    </li>
                     <li>
                         <Link to="/checkout" className="cart_link">
                             <FaShoppingCart size={20} style={{ marginRight: "6px" }} />
                             Carrinho
                         </Link>
                     </li>
+
                 </ul>
         </nav>
     )

@@ -1,0 +1,20 @@
+.newstock_container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newstock_container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.newstock_container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

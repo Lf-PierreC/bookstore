@@ -13,6 +13,8 @@ import Store from './pages/Store';
 import BookDetails from './pages/BookDetails';
 import { CartProvider } from './Context/CartContext';
 import Checkout from './pages/Checkout';
+import Stock from './pages/Stock';
+import NewStock from './pages/NewStock';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/books/:id" element={<BookDetails />} />
         <Route path="/store" element={<Store/>} />
         <Route path="/checkout" element={<Checkout/>} />
+        <Route path="/stocks" element={<Stock />} />
+        <Route path="/stocks/new" element={<NewStock />} />
       </Routes>
     </CartProvider>
   );
