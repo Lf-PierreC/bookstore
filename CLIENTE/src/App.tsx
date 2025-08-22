@@ -11,10 +11,12 @@ import NewBook from './pages/NewBook';
 import EditBook from './pages/EditBook';
 import Store from './pages/Store';
 import BookDetails from './pages/BookDetails';
+import { CartProvider } from './Context/CartContext';
+import Checkout from './pages/Checkout';
 
 function App() {
   return (
-    <>
+    <CartProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,8 +28,9 @@ function App() {
         <Route path="/books/:id/edit" element={<EditBook />} />
         <Route path="/books/:id" element={<BookDetails />} />
         <Route path="/store" element={<Store/>} />
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
-    </>
+    </CartProvider>
   );
 }
 

@@ -24,3 +24,11 @@
 .item a:hover {
     color: #9e847f;
 }
+
+.cart_link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  text-decoration: none;
+}

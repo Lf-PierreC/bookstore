@@ -22,7 +22,7 @@
 
 .store_image {
   width: 150px;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 0.5em;

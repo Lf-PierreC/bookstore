@@ -73,7 +73,7 @@
       "price": 120,
       "profitMargin": 30,
       "reason": "",
-      "imageUrl": "livro1.png",
+      "imageUrl": "livro1.jpg",
       "createdAt": "2025-08-01"
     },
     {
@@ -84,7 +84,7 @@
       "price": 150.5,
       "profitMargin": 25,
       "reason": "",
-      "imageUrl": "livro3.png",
+      "imageUrl": "livro3.jpg",
       "createdAt": "2025-08-05"
     },
     {
@@ -95,7 +95,7 @@
       "price": 111,
       "profitMargin": 12,
       "reason": "teste",
-      "imageUrl": "livro2.png"
+      "imageUrl": "livro2.jpg"
     }
   ]
 }

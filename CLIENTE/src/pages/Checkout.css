@@ -1,0 +1,123 @@
+/* Container geral */
+.checkout_container {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+/* Título */
+.checkout_container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+/* Lista de itens do carrinho */
+.checkout_container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* Card do item */
+.checkout_item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #e7e3e2;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+
+/* Capa do livro */
+.checkout_item img {
+  width: 72px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+/* Área de textos/ações do item */
+.checkout_item h4 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  color: #2b2b2b;
+}
+
+.checkout_item p {
+  margin: 0 0 8px;
+  color: #444;
+}
+
+/* Quantidade */
+.checkout_item input[type="number"] {
+  width: 80px;
+  padding: 6px 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-right: 10px;
+}
+
+/* Botão remover */
+.checkout_item button {
+  background: #fff;
+  color: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.checkout_item button:hover {
+  background: #9e847f;
+  color: #fff;
+  border-color: #9e847f;
+}
+
+/* Total e finalizar */
+.checkout_container h3 {
+  text-align: right;
+  margin: 10px 0 16px;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+/* Botão finalizar */
+.btn_finish {
+  display: inline-block;
+  margin-left: auto;
+  background: #594a47;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn_finish:hover {
+  background: #4c3f3c;
+}
+
+/* Estado vazio */
+.checkout_container > p {
+  text-align: center;
+  color: #666;
+}
+
+/* Responsivo: em telas médias, coloca a lista em 2 colunas */
+@media (min-width: 860px) {
+  .checkout_container ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
